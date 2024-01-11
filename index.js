@@ -389,15 +389,61 @@
 
 // Nullish Coalescing Operator
 
-let users = {
-	student: {
-		// name: 'ahsan',
-		name: '',
-		age: 25,
-	},
-};
-// console.warn(users);
-// console.warn(users.student.name);
+// let users = {
+// 	student: {
+// 		// name: 'ahsan',
+// 		name: '',
+// 		age: 25,
+// 	},
+// };
+// // console.warn(users);
+// // console.warn(users.student.name);
 
-console.warn(users.student.name ?? 'unknown');
-console.warn(users.student.age ?? 26);
+// console.warn(users.student.name ?? 'unknown');
+// console.warn(users.student.age ?? 26);
+
+// Bigint
+
+// let x = 100000089776557745484578n;
+// let z = BigInt(1000000897765577454845780);
+
+// // let y = 100000000565674883873874;
+
+// // console.warn(x * y);
+
+// console.warn(typeof x);
+// console.warn(typeof z);
+
+//  Primitive
+
+//  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+
+const score = 100;
+const scoreValue = 100.3;
+
+const isLoggedIn = false;
+const outsideTemp = null;
+let userEmail;
+
+const id = Symbol('123');
+const anotherId = Symbol('123');
+
+console.log(id === anotherId);
+
+// const bigNumber = 3456543576654356754n
+
+// Reference (Non primitive)
+
+// Array, Objects, Functions
+
+const heros = ['ahsan', 'satti', 'doga'];
+let myObj = {
+	name: 'ali',
+	age: 22,
+};
+
+const myFunction = function () {
+	console.log('Hello world');
+};
+
+console.log(typeof anotherId);
